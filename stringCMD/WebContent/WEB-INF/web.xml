@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>stringCMD</display-name>
+   <context-param>
+       <param-name>presentationServ</param-name>
+       <param-value>/presentation</param-value>
+    </context-param>
+
+    <context-param>
+       <param-name>getParamsServ</param-name>
+       <param-value>/getparams</param-value>
+    </context-param>
+    
+     <context-param>
+       <param-name>resBundleServ</param-name>
+       <param-value>/getbundle</param-value>
+    </context-param>
+    <context-param>
+       <param-name>resBundleName</param-name>
+       <param-value>RegexParamsDef</param-value>
+    </context-param>
+    <context-param>
+       <param-name>commandClassName</param-name>
+       <param-value>FindCommand</param-value>
+    </context-param>
+  
+   <servlet>
+       <servlet-name>ControllerServ</servlet-name>
+        <servlet-class>ControllerServ</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControllerServ</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+     
+     
+      <servlet>
+       <servlet-name>ResourceBundleServ</servlet-name>
+        <servlet-class>ResourceBundleServ</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResourceBundleServ</servlet-name>
+        <url-pattern>/getbundle</url-pattern>
+    </servlet-mapping>
+
+      <servlet>
+       <servlet-name>GetParamsServ</servlet-name>
+        <servlet-class>GetParamsServ</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetParamsServ</servlet-name>
+        <url-pattern>/getparams</url-pattern>
+    </servlet-mapping>
+<servlet>
+       <servlet-name>Foto</servlet-name>
+        <servlet-class>view.Foto</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Foto</servlet-name>
+        <url-pattern>/foto</url-pattern>
+    </servlet-mapping>
+          <servlet>
+       <servlet-name>ResultPresent</servlet-name>
+        <servlet-class>ResultPresent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResultPresent</servlet-name>
+        <url-pattern>/presentation</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

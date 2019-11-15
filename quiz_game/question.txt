@@ -1,0 +1,10 @@
+Variable type String is, Is a object, Is a class, Primitive type, Is an interface
+Variable type int is, Variable holding integers, Variable holding floating point numbers, Is a class, Is a object
+Variable type double is, Variable holding floating point numbers, There is no such type, Is a collection, Variable holding integers
+1 + 2 = ?, 3, 5 - 3, 4, 2^2
+5 - 2 * 2, 1, 6, -1, 0
+3 / 0, 0, 1, 3, -1
+Taipei is, in, of, at, from
+She _____ blue velvet to the party last night, wore, worn, war, weared
+We studied the question ____ , scientifically, scientist, sciencing, science
+You can't have your cake ____ eat it too, and, while, or, but

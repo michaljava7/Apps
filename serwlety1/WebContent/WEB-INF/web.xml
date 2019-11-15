@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SERWLETY 1</display-name>
+   <servlet>
+       <servlet-name>HTMLMsg</servlet-name>
+        <servlet-class>serwlety.Msg</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HTMLMsg</servlet-name>
+        <url-pattern>/msg</url-pattern>
+    </servlet-mapping>
+    <servlet>
+       <servlet-name>Msg2</servlet-name>
+        <servlet-class>serwlety.Msg2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Msg2</servlet-name>
+        <url-pattern>/paths</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+       <servlet-name>Time1</servlet-name>
+        <servlet-class>serwlety.Time1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Time1</servlet-name>
+        <url-pattern>/time</url-pattern>
+    </servlet-mapping>
+       <servlet>
+       <servlet-name>Regex1</servlet-name>
+        <servlet-class>formularze.Regex1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Regex1</servlet-name>
+        <url-pattern>/regex</url-pattern>
+    </servlet-mapping>
+      
+       <servlet>
+       <servlet-name>Regex2</servlet-name>
+        <servlet-class>formularze.Regex2</servlet-class>
+          <init-param>
+          <param-name>regexFormFile</param-name>
+          <param-value>regexform.html</param-value>
+       </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Regex2</servlet-name>
+        <url-pattern>/regex2</url-pattern>
+    </servlet-mapping>
+  
+</web-app>
